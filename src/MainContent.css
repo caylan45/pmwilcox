@@ -1,0 +1,40 @@
+.main-content {
+    position: absolute; /* Position relative to the nearest positioned ancestor or to the body */
+    bottom: 10%; /* Adjust this value to place it higher or lower from the bottom of the page */
+    left: 50%; /* Center the content horizontally */
+    transform: translate(-50%, -10%); /* Align the center of the content with the center of the page */
+    z-index: 2; /* Ensure it's above the background image */
+    text-align: center; /* Center the text */
+    font-family: serif;
+  }
+
+  .title {
+    display: flex;
+    font-family: serif;
+align-content: center;
+    font-size: 5em; /* Adjust the font size as needed */
+    color: white; /* Text color */
+    text-transform: uppercase; /* Uppercase styling */
+    padding-top: 10px; /* Remove default margin */
+    margin: 0;
+    /* Add any additional styling such as font family if needed */
+  }
+  
+  .preorder-button {
+    font-size: 1em; /* Adjust the font size as needed */
+    padding: 10px 20px; /* Padding inside the button */
+    margin-top: 20px; /* Space above the button */
+    background-color: gold; /* Button color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    color: black; /* Text color */
+    text-transform: uppercase; /* Uppercase styling */
+    font-weight: bold; /* Bold font */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Transition for hover effect */
+  }
+  
+  .preorder-button:hover {
+    background-color: darkgoldenrod; /* Color when hovering over the button */
+  }
+  

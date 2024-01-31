@@ -1,0 +1,35 @@
+.landing {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh; /* Height of the grids and image container */
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  height: 90vh; /* Equal to the height of the landing to match the image container */
+}
+
+.grid-square {
+  background-color: #eee;
+  border: 1px solid #ddd;
+  aspect-ratio: 1 / 1; /* Keep the squares aspect ratio */
+}
+
+.image-container {
+  flex: 0 1 auto; /* Do not grow, but allow shrink */
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.fullscreen-image {
+  max-height: 90vh; /* Maximum height to maintain aspect ratio */
+  object-fit: contain; /* Contain within the given dimension without cropping */
+}
